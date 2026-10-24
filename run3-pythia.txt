@@ -1,0 +1,14 @@
+sanity: 'The capital of France is' [510, 5347, 273, 6181, 310] -> ' located in the city of'
+sanity: 'One, two, three, four,' [4041, 13, 767, 13, 1264, 13, 1740, 13] -> ' five, six, seven'
+tokens=1024 ppl=87.4 logit max mean=835.5 logit mean=805.8 |h| mean=270.8 out std=0.1147 |mean out|=3.011 |mean in|=0.049 cos(mean out, mean h)=0.996
+init                        K  greedy kept  new mass mean      p90      max     ppl x
+mean                     1000        1.000         0.0000   0.0000   0.0000         1
+mean                    25000        1.000         0.0000   0.0000   0.0000         1
+multivar x1              1000        0.001         0.9990   1.0000   1.0000 7.32e+107
+multivar x1             25000        0.001         0.9990   1.0000   1.0000 7.42e+134
+univariate               1000        0.467         0.3422   0.7180   0.9812      1.72
+univariate              25000        0.009         0.9862   0.9998   1.0000       660
+random N(0,.02)          1000        1.000         0.0000   0.0000   0.0000         1
+random N(0,.02)         25000        1.000         0.0000   0.0000   0.0000         1
+random N(0,.02)+mean     1000        1.000         0.0000   0.0000   0.0000         1
+random N(0,.02)+mean    25000        1.000         0.0005   0.0013   0.0131         1

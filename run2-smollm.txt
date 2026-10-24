@@ -1,0 +1,14 @@
+sanity: 'The capital of France is' -> ' the capital of the country'
+sanity: 'One, two, three, four,' -> ' five, six, seven'
+tokens=1024 ppl=46.6 logit max mean=26.1 logit mean=9.7 |h| mean=50.2 emb std=0.1347 |mean emb|=2.177
+init                        K  greedy kept  new mass mean      p90      max     ppl x
+mean                     1000        1.000         0.0001   0.0003   0.0012         1
+mean                    25000        1.000         0.0024   0.0069   0.0299         1
+multivar x1              1000        0.993         0.0114   0.0333   0.1556      1.01
+multivar x1             25000        0.926         0.1327   0.3489   0.7906      1.17
+univariate               1000        0.440         0.4628   0.9588   1.0000      3.36
+univariate              25000        0.174         0.8430   0.9998   1.0000      71.9
+random N(0,.02)          1000        1.000         0.0010   0.0001   0.1243         1
+random N(0,.02)         25000        1.000         0.0127   0.0014   0.7742      1.02
+random N(0,.02)+mean     1000        1.000         0.0001   0.0004   0.0025         1
+random N(0,.02)+mean    25000        1.000         0.0037   0.0107   0.0572         1

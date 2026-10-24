@@ -1,0 +1,30 @@
+step1000 200 649308728
+== step1000
+sanity: 'The capital of France is' [510, 5347, 273, 6181, 310] -> ' the most important part of'
+sanity: 'One, two, three, four,' [4041, 13, 767, 13, 1264, 13, 1740, 13] -> ' and three of the three'
+tokens=1024 ppl=213.6 logit max mean=11.3 logit mean=-2.5 |h| mean=32.6 out std=0.0340 |mean out|=0.276 |mean in|=0.027 cos(mean out, mean h)=-0.627
+step8000 200 649308728
+== step8000
+sanity: 'The capital of France is' [510, 5347, 273, 6181, 310] -> ' the capital of the French'
+sanity: 'One, two, three, four,' [4041, 13, 767, 13, 1264, 13, 1740, 13] -> ' five, six, seven'
+tokens=1024 ppl=91.3 logit max mean=14.8 logit mean=-0.3 |h| mean=42.7 out std=0.0458 |mean out|=0.212 |mean in|=0.088 cos(mean out, mean h)=-0.047
+step32000 200 649308728
+== step32000
+sanity: 'The capital of France is' [510, 5347, 273, 6181, 310] -> ' the capital of the French'
+sanity: 'One, two, three, four,' [4041, 13, 767, 13, 1264, 13, 1740, 13] -> ' five, six, seven'
+tokens=1024 ppl=79.4 logit max mean=12.9 logit mean=-2.6 |h| mean=45.7 out std=0.0456 |mean out|=0.269 |mean in|=0.077 cos(mean out, mean h)=-0.327
+step64000 200 649308728
+== step64000
+sanity: 'The capital of France is' [510, 5347, 273, 6181, 310] -> ' the city of Paris.'
+sanity: 'One, two, three, four,' [4041, 13, 767, 13, 1264, 13, 1740, 13] -> ' five, six, seven'
+tokens=1024 ppl=78.1 logit max mean=13.0 logit mean=-2.4 |h| mean=55.1 out std=0.0395 |mean out|=0.233 |mean in|=0.064 cos(mean out, mean h)=-0.296
+step100000 200 649308728
+== step100000
+sanity: 'The capital of France is' [510, 5347, 273, 6181, 310] -> ' the capital of the Republic'
+sanity: 'One, two, three, four,' [4041, 13, 767, 13, 1264, 13, 1740, 13] -> ' five, six, seven'
+tokens=1024 ppl=84.7 logit max mean=94.1 logit mean=77.7 |h| mean=128.7 out std=0.0409 |mean out|=0.663 |mean in|=0.055 cos(mean out, mean h)=0.969
+step143000 200 649308728
+== step143000
+sanity: 'The capital of France is' [510, 5347, 273, 6181, 310] -> ' located in the city of'
+sanity: 'One, two, three, four,' [4041, 13, 767, 13, 1264, 13, 1740, 13] -> ' five, six, seven'
+tokens=1024 ppl=87.4 logit max mean=835.5 logit mean=805.8 |h| mean=270.8 out std=0.1147 |mean out|=3.011 |mean in|=0.049 cos(mean out, mean h)=0.996

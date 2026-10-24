@@ -1,0 +1,2 @@
+pythia sv1/sv2=11.3 sv1/median=103.7 top-sv share of energy=0.906 cos(v1,mean row)=1.000
+pythia410 sv1/sv2=5.5 sv1/median=12.0 top-sv share of energy=0.118 cos(v1,mean row)=0.997
